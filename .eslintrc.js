@@ -9,9 +9,10 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-strongly-recommended',
     'plugin:vue/vue3-recommended',
+    'plugin:jest/recommended',
     'prettier'
   ],
-  plugins: ['vue', 'html', 'prettier'],
+  plugins: ['vue', 'html', 'prettier', 'jest'],
   rules: {
     'no-console': 1,
     'no-debugger': 2,

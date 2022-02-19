@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="./assets/img/logo.png" />
   <HelloWorld message="Hello Vue 3.0 + Vite" />
 </template>
 
@@ -13,3 +13,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import 'assets/scss/app';
+</style>
