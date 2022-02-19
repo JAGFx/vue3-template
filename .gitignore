@@ -6,3 +6,4 @@ build
 .env.local
 .idea/
 coverage/
+public/icons/

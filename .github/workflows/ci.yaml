@@ -36,6 +36,6 @@ jobs:
             -   name: Install Dependencies
                 run: npm i
             -   name: Run CI
-                run: npm run code-style
+                run: npm run lint
             -   name: Run test
                 run: npm test

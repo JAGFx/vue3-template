@@ -1,9 +1,23 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">{{ message }}</h1>
-    <input v-model="message" type="text" />
-    <div><button @click="count++">+</button></div>
-    <code>{{ count }}</code>
+    <h1 class="m-4">{{ message }}</h1>
+    <form>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <input
+          id="message"
+          v-model="message"
+          type="text"
+          class="form-control"
+        />
+      </div>
+      <div class="row">
+        <button class="btn btn-primary col" @click.prevent="count++">+</button>
+        <code class="col d-flex justify-content-center align-items-center">{{
+          count
+        }}</code>
+      </div>
+    </form>
   </div>
 </template>
 
