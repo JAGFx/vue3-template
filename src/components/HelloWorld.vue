@@ -13,8 +13,12 @@
       </div>
       <div class="row">
         <button class="btn btn-primary col" @click.prevent="count++">+</button>
+        <input v-model="number1" type="number" class="form-control my-2" />
         <code class="col d-flex justify-content-center align-items-center">{{
           count
+        }}</code>
+        <code class="col d-flex justify-content-center align-items-center">{{
+          count + number1
         }}</code>
       </div>
     </form>
@@ -26,7 +30,8 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      count: 0
+      count: 0,
+      number1: 0
     };
   },
   computed: {
