@@ -1,14 +1,14 @@
 {
   "name": "vue3",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "dev": "npm run font:build && vite",
     "build": "npm run font:build && vite build",
     "build:preview": "npm run font:build && vite preview --port 8001",
     "lint": "npm run lint:lint && npm run lint:format && npm run lint:scss",
     "lint:lint": "npx eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "lint:format": "npx prettier --write 'src/**/*.js' 'src/**/*.vue' 'test/**/*.js'",
-    "lint:scss": "npx stylelint 'src/assets/scss/**/*.scss'",
+    "lint:format": "npx prettier --write src/**/*.js src/**/*.vue test/**/*.js",
+    "lint:scss": "npx stylelint src/assets/scss/**/*.scss",
     "test": "npm run test:unit",
     "test:unit": "npx jest",
     "test:coverage": "npx jest --coverage",
