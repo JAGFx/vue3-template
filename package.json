@@ -1,7 +1,7 @@
 {
   "name": "vue3",
-  "version": "0.0.2",
-  "homepage" : "https://jagfx.github.io/vue3-template",
+  "version": "0.0.3",
+  "homepage": "https://jagfx.github.io/vue3-template",
   "scripts": {
     "dev": "npm run font:build && vite",
     "build": "npm run font:build && vite build",
@@ -19,7 +19,7 @@
     "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.2.31",
+    "vue": "^3.2.33",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
@@ -47,6 +47,6 @@
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-recommended-scss": "^5.0.2",
     "stylelint-config-standard-scss": "^3.0.0",
-    "vite": "^2.8.4"
+    "vite": "^2.9.6"
   }
 }
