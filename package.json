@@ -1,6 +1,6 @@
 {
   "name": "vue3",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://jagfx.github.io/vue3-template",
   "scripts": {
     "dev": "npm run font:build && vite",
@@ -19,34 +19,34 @@
     "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.2.33",
+    "vue": "^3.2.37",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
-    "@vitejs/plugin-vue": "^2.2.2",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@vitejs/plugin-vue": "^2.3.3",
     "@vue/compiler-sfc": "^3.0.4",
-    "@vue/vue3-jest": "^27.0.0-alpha.4",
+    "@vue/vue3-jest": "^27.0.0",
     "babel-jest": "^27.5.1",
     "bootstrap": "^5.1.3",
-    "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-html": "^6.2.0",
-    "eslint-plugin-jest": "^26.1.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.4.1",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
     "fantasticon": "^1.2.3",
     "gh-pages": "^3.2.3",
-    "http-server": "^14.1.0",
+    "http-server": "^14.1.1",
     "jest": "^27.5.1",
-    "postcss-import": "^14.0.2",
-    "prettier": "2.5.1",
-    "sass": "^1.49.8",
-    "stylelint": "^14.5.1",
+    "postcss-import": "^14.1.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "stylelint": "^14.9.1",
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-recommended-scss": "^5.0.2",
-    "stylelint-config-standard-scss": "^3.0.0",
-    "vite": "^2.9.6"
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "vite": "^2.9.13"
   }
 }
