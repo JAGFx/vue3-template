@@ -14,12 +14,13 @@
 
 <hr/>
 
+> This project template is made to be Domain-Driven Development compliant
+
 ## Dependencies
 
 ### Others
 
 - [x] VueJS
-- [x] Vuex
 - [x] Bootstrap
 - [x] Github action
 - [x] Project board
@@ -28,7 +29,6 @@
 ### Build
 
 - [x] ViteJs
-- [x] Babel
 - [x] Fantasticon (Font generator from SVGs)
 
 ### Linter
