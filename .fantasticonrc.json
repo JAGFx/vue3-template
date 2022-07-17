@@ -1,0 +1,5 @@
+{
+	"inputDir": "./resources/icons/svgs",
+	"outputDir": "./public/icons",
+	"assetTypes": ["css"]
+}
