@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/img/logo.png" />
+  <img src="src/application/assets/img/logo.png" />
 </p>
 <h2 align="center">VueJs 3 + Vite project template</h2>
 <br>

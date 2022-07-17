@@ -6,7 +6,7 @@
         <label for="message" class="form-label">Message:</label>
         <input
           id="message"
-          v-model="message"
+          v-model="messageModel"
           type="text"
           class="form-control"
         />
@@ -18,31 +18,28 @@
           count
         }}</code>
         <code class="col d-flex justify-content-center align-items-center">{{
-          count + number1
+          sum(count, number1)
         }}</code>
       </div>
     </form>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-      count: 0,
-      number1: 0
-    };
+<script setup>
+import { useHelloWorld } from '@/application/uses/useHelloWorld.js';
+import { sum } from '@/domain/work/work.js';
+import { computed, ref } from 'vue';
+
+const count = ref(0);
+const number1 = ref(0);
+const { message, setMessage } = useHelloWorld();
+
+const messageModel = computed({
+  get() {
+    return message.value;
   },
-  computed: {
-    message: {
-      get() {
-        return this.$store.getters['app/getMessage'];
-      },
-      set(value) {
-        this.$store.commit('app/setMessage', value);
-      }
-    }
+  set(value) {
+    setMessage(value);
   }
-};
+});
 </script>

@@ -1,0 +1,27 @@
+@import "../abstract/variable";
+
+// Configuration
+@import "../../../../node_modules/bootstrap/scss/functions";
+
+// <editor-folder> Customs variables
+$body-color: $color-main;
+
+// </editor-folder> Customs variables
+
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../../../../node_modules/bootstrap/scss/root";
+@import "../../../../node_modules/bootstrap/scss/reboot";
+@import "../../../../node_modules/bootstrap/scss/images";
+@import "../../../../node_modules/bootstrap/scss/grid";
+@import "../../../../node_modules/bootstrap/scss/forms";
+@import "../../../../node_modules/bootstrap/scss/buttons";
+
+// Helpers
+@import "../../../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../../../node_modules/bootstrap/scss/utilities/api";
