@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/application/assets/img/logo.png" />
+  <img src="public/images/logo.png" />
 </p>
 <h2 align="center">VueJs 3 + Vite project template</h2>
 <br>
@@ -14,7 +14,7 @@
 
 <hr/>
 
-> This project template is made to be Domain-Driven Development compliant
+> This project template is made to be Domain-Driven Design compliant
 
 ## Dependencies
 
