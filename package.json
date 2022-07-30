@@ -3,20 +3,20 @@
   "version": "0.1.1",
   "homepage": "https://jagfx.github.io/vue3-template",
   "scripts": {
-    "dev": "npm run font:build && vite",
-    "build": "npm run font:build && vite build",
-    "build:preview": "npm run font:build && vite preview --port 8001",
-    "lint": "npm run lint:eslint && npm run lint:prettier && npm run lint:stylelint",
-    "lint:eslint": "npx eslint 'src/**/*.{js,vue}' --fix",
-    "lint:prettier": "npx prettier --config .prettierrc.json 'src/**/*.{js,vue}'  --write",
-    "lint:stylelint": "npx stylelint --fix src/**/*.scss",
-    "test": "npm run test:unit",
-    "test:unit": "npx jest",
-    "test:coverage": "npx jest --coverage",
+    "dev":                   "npm run font:build && vite",
+    "build":                 "npm run font:build && vite build",
+    "build:preview":         "npm run font:build && vite preview --port 8001",
+    "lint":                  "npm run lint:eslint && npm run lint:prettier && npm run lint:stylelint",
+    "lint:eslint":           "npx eslint 'src/**/*.{js,vue}' --fix -c tools/.eslintrc.json",
+    "lint:prettier":         "npx prettier --config tools/.prettierrc.json 'src/**/*.{js,vue}'  --write",
+    "lint:stylelint":        "npx stylelint --fix src/**/*.scss --config tools/.stylelintrc.json",
+    "test":                  "npm run test:unit",
+    "test:unit":             "npx jest -c tools/.jestrc.js",
+    "test:coverage":         "npx jest --coverage -c tools/.jestrc.js",
     "test:coverage:preview": "npm run test:coverage && npx http-server coverage/lcov-report/ -p 8002",
-    "font:build": "npx fantasticon",
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d dist"
+    "font:build":            "npx fantasticon -c tools/.fantasticonrc.json",
+    "predeploy":             "npm run build",
+    "deploy":                "npx gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.2.37"
