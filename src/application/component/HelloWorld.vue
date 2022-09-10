@@ -25,9 +25,9 @@
   </div>
 </template>
 
-<script setup>
-import { useHelloWorld } from '@/application/uses/useHelloWorld.js';
-import { sum } from '@/domain/work/work.js';
+<script setup lang="ts">
+import { useHelloWorld } from '@/application/uses/useHelloWorld';
+import { sum } from '@/domain/work/work';
 import { computed, ref } from 'vue';
 
 const count = ref(0);

@@ -1,11 +1,11 @@
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig');
+
 module.exports = {
-  moduleNameMapper: {
-    '@/(.*)$': '<rootDir>/src/$1'
-  },
-  transform: {
-    '^.+\\.js$': ['babel-jest', { configFile: './tools/.babelrc.json' }]
-  },
+  preset: 'ts-jest',
   testEnvironment: 'node',
   clearMocks: true,
-  rootDir: '../'
+  rootDir: '../',
+  modulePaths: [compilerOptions.baseUrl],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths)
 };

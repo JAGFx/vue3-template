@@ -8,7 +8,7 @@ const getters = {
   message: computed(() => state.message)
 };
 const actions = {
-  setMessage: (newMassage) => {
+  setMessage: (newMassage: string) => {
     state.message = newMassage;
   }
 };
