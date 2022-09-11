@@ -21,6 +21,7 @@
 ### Others
 
 - [x] VueJS
+- [x] Typescript
 - [x] Bootstrap
 - [x] Github action
 - [x] Project board
