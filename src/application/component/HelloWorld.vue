@@ -6,9 +6,10 @@
         <label for="message" class="form-label">Message:</label>
         <input
           id="message"
-          v-model="messageModel"
           type="text"
           class="form-control"
+          :value="message"
+          @input="(event) => setMessage(event.target.value)"
         />
       </div>
       <div class="row">
@@ -28,18 +29,9 @@
 <script setup lang="ts">
 import { useHelloWorld } from '@/application/uses/useHelloWorld';
 import { sum } from '@/domain/work/work';
-import { computed, ref } from 'vue';
+import { ref } from 'vue';
 
 const count = ref(0);
 const number1 = ref(0);
 const { message, setMessage } = useHelloWorld();
-
-const messageModel = computed({
-  get() {
-    return message.value;
-  },
-  set(value) {
-    setMessage(value);
-  }
-});
 </script>

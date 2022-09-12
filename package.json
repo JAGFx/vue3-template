@@ -1,6 +1,6 @@
 {
   "name": "vue3",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://jagfx.github.io/vue3-template",
   "scripts": {
     "dev": "npm run font:build && vite -c tools/vite.config.ts",

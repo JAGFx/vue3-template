@@ -1,4 +1,4 @@
-import { computed, reactive, readonly } from 'vue';
+import { computed, reactive } from 'vue';
 
 const state = reactive({
   message: 'This is a message'
@@ -14,7 +14,6 @@ const actions = {
 };
 
 export const useHelloWorld = () => ({
-  state: readonly(state),
   ...getters,
   ...actions
 });
